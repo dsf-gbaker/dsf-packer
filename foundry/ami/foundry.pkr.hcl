@@ -99,7 +99,7 @@ build {
 
   # copy the server files
   provisioner "file" {
-    source      = "../src/${var.foundry-major-v}/${var.foundry-minor-v}"
+    source      = "../src/${var.foundry-major-v}/${var.foundry-minor-v}/"
     destination = "${var.foundry-dir}/server"
   }
 
