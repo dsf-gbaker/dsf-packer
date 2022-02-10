@@ -61,14 +61,6 @@ build {
     script = "./scripts/install-deps.sh"
   }
 
-  # create the wordpress directories
-  provisioner "shell" {
-    inline = [
-      "echo -- Create Wordpress Data Directory",
-      "sudo mkdir -p /wordpress/data"
-    ]
-  }
-
   # set wordpress dir permissions
   provisioner "shell" {
     inline = [
